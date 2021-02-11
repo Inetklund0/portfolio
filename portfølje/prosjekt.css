@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Raleway;
+}
+
+body{
+    color: #FFE6D1;
+    background: rgb(54,53,53);
+    background: linear-gradient(90deg, rgba(54,53,53,1) 30%, rgba(34,34,34,1) 70%);
+}
+
+main{
+    margin:10%;
+}
+
+p{  
+    margin-bottom: 6%;
+    font-family: Roboto;
+    font-size: 1.4rem;
+}
+
+nav{
+    position: fixed;
+} 
+
+.tilbake{
+    padding:10px;
+}
+
+.tilbake li{
+    display: block;
+}
+
+li a{
+    color: #F4BD8A;
+    text-decoration: none;
+    transition: all .4 ease;
+    width:200px;
+    line-height: 3;
+    font-size: 1.2rem; 
+    transition: all .5s ease;
+}
+
+li a:hover{
+    color: #E7751F;
+    font-size: 1.3rem;
+    transition: scale(1.1);
+}
+
+.prosjekt{
+    width: 75%;
+    line-height: 2;  
+}
+
+.prosjekttittel{
+    margin: 12%;
+    margin-bottom: 5%;
+    background:rgba(248,204,153);
+    background: linear-gradient(145deg, rgba(152,55,73,1) 1%, rgba(181,80,66,1) 9%, rgba(196,91,69,1) 16%, rgba(222,118,67,1) 50%, rgba(248,204,153,1) 70%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1.8rem;
+}
+
+img{
+    width: 100vw;
+    height: 40vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mood{
+    width: 60vw;
+    height: 50vh;
+}
+
+/* .bilde-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 rgba(0, 0, 0, 0.19);
+}
+
+.prototype, .skisser{
+    width: 50%;
+    min-width: 350px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bilde-container img{
+    width: 90%;
+    height: 300px;
+}
+
+.skisser{
+    background: rgb(152,55,73);
+    background: linear-gradient(135deg, rgba(152,55,73,1) 1%, rgba(181,80,66,1) 9%, rgba(196,91,69,1) 25%, rgba(222,118,67,1) 80%, rgba(248,204,153,1) 99%);
+    padding: 20px;
+} */
+
+@media (max-width: 1100px){
+    main{
+        margin: 5%;
+        width: 90%;
+    }
+
+    .mood{
+        width: 100%;
+        height: 50%;
+    }
+    
+    /* .bilde-container{
+        flex-direction: row;
+        min-width: 100vw;
+    }
+
+    .prototype, .skisser{
+        width: 100%;
+        max-height: 400px;
+    } */
+
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefølje</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/flamelink@1.0.0-alpha.34/flamelink.js"></script>
+  
+    <script defer src="main.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="hide"><a href="#om"> Om meg</a></li>
+                <li class="hide"><a href="#prosjekt">  Prosjekter</a></li>
+                <li class="hide"><a href="#cv"> CV</a></li>
+            </ul>
+        </nav> 
+        
+    </header>
+    
+    <main>
+        <section class="startside">
+            <div class="overskrift">
+                <img id="rev" src="./bilder/Rev illustrasjon.svg" alt="" srcset="">
+                <h1 id="overskrift">Portefølje til Ine T. Kielland Lund</h1>
+                <p id="intro">Jeg er 24 år og nyutdannet interaksjonsdesigner ved Fagskolen Kristiania Oslo. Fra tidligere har jeg en bachelor i PR, kommunikasjon og media fra Høgskulen i Volda. De to fagfeltene er noe jeg er veldig interessert i og ønsker å kombinere for å enklere formidle gode budskap i et brukervennlig brukergrensesnitt. </p> 
+            </div>
+        </section>
+    
+        <section id="om">
+        <h2 >Om meg</h2>
+            <div class="om-container">
+                <div class="ombilde">
+                    <img class="selfie" src="bilder/portrett.png" alt="" srcset=""> 
+                    
+                </div>
+                <div class="omtekst">
+                    <h3 id="interesse">Faglig interesser</h3><p>  
+                    Jeg er opptatt av den gode kommunikasjonen, det gode designet og brukervennlige løsninger. Faglig interesse er den visuelle kommunikasjonen og brukerpsykologi innenfor brukergrensesnitt design. UI/UX prosesser og verktøy for å oppnå interaktive produksjoner og strukturer av digitalt innhold. 
+                    </p>
+                     
+                    <h3 id="interesse">Hobbyer og interesser</h3><p>
+                    På fritiden liker jeg å være aktiv med å gå tur eller slappe av med en god serie/bok.  Når det begynner å bli varmere i vannet liker jeg å padle kajakk eller SUP brett (selv om ikke balansen er på topp enda), det er noe som gir en indre ro. Ellers er jeg glad i å være kreativ, ta bilder og klatre på klatresentre. </p>
+                    <!-- <p>
+                    <li>UI og UX design</li>
+                    <li>Konspetutvikling </li>  
+                    <li>brukerpsykologi </li> 
+                    <li>Visuell kommunikasjon</li>   
+                    <li>Research </li>   
+                    <li>Datavisualisering </li>
+                    <li>Adobe CC </li>  
+                    </p>     -->
+                </div>
+            </div>
+        </section>
+
+    <div class="stolthet">   
+        <h3 class="tull">Utvalgte prosjekter</h3>
+    <section id="prosjekt">
+        <div class="container"> 
+            <div class="text">
+            </div> 
+                <div class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                    </div>
+            </div> 
+        </div> 
+
+        <div class="container">
+            <div class="text">   
+            </div>    
+                <div class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">   
+                    </div>
+                </div>
+        </div>                      
+          
+        <div class="container">
+            <div class="text">
+            </div>        
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">      
+                    </div>
+                </div>     
+        </div> 
+
+        <div class="container"> 
+            <div class="text">
+            </div>    
+                <div class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                    </div>
+                </div>
+        </div> 
+    </section>
+</div> 
+</main>  
+ <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <div class="cv-container">
+            <div class="skole">
+                <!-- <h3>Utdanning</h3><br> -->
+                <p> <strong>Utdanning</strong>
+                     <br>
+                    Interaksjonsdesign <br>
+                    Fagskolen Kristiania, <br> 2019-2021<br> <br> 
+                    
+                    Bachelor PR, kommunikasjon og media <br>
+                    Høgskulen i Volda, <br>
+                    2016-2019 <br> <br>
+                    
+                    Media og kommunikasjon <br>  
+                    Akademiet Drammen VGS, <br>
+                    2013-2016</p>
+
+                    
+                <p> <strong> Erfaring </strong>
+                   <br>
+                    Annonsering, <br>
+                    Frilans Moen&Co <br>
+                    <br>
+                    Arbeidsgruppa frivillighetensår 2022,
+                    Tillitsvalgt av Norges speiderforbund <br> 
+                    <br><br>
+                    Designansvarlig, <br>
+                    Speiderleir Agenda 2021
+                </p>
+            </div>
+            <div class="erfaring">
+                
+                <a href="mailto:inekielland97@gmail.com?subject=Mail fra portefølje-nettside"><h3>Kontakt</h3><img class="link" id="kontakt" src="./bilder/iconfinder_mail-letter-offer_2931172.svg"></a>
+                
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

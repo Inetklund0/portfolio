@@ -1,0 +1,408 @@
+*{
+    box-sizing: border-box;
+    font-family: Raleway;
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #FFE6D1;
+    background: rgb(54,53,53);
+    background: linear-gradient(90deg, rgba(54,53,53,1) 30%, rgba(34,34,34,1) 70%);
+    font-size: 1.3rem;
+}
+
+main{
+    margin: 13%;
+}
+
+/* Illustrasjon */
+#rev{
+    width: 48%;
+    float: right;
+}
+
+/* En introduksjon til portfølje siden */
+.startside{
+    height: 80vh;
+}
+
+#overskrift{
+    font-size: 5rem;
+    background:rgba(248,204,153);
+    background: linear-gradient(145deg, rgba(152,55,73,1) 1%, rgba(181,80,66,1) 9%, rgba(196,91,69,1) 16%, rgba(222,118,67,1) 50%, rgba(248,204,153,1) 70%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#intro {
+    width: 550px;
+    line-height: 1.6;
+}
+
+/* Tekstelementer */
+h1{
+    margin-bottom: 5%;
+}
+h2{
+    font-size: 2rem;
+    color: #FFE6D1;
+}
+h3{
+    font-size: 1.8rem;
+}
+
+p{
+    font-family: Roboto;
+    line-height: 1.5;
+}
+
+#interesse{
+    font-size: 1.7rem;
+    margin-top: 11%;
+}
+
+.tull{
+    font-size: 2.3rem;
+}
+
+/* Navigasjon - meny */
+nav{
+    position: fixed;
+}   
+
+.menu{
+    padding:10px;
+}
+
+.menu li{
+    display: block;
+}
+
+li a{
+    color: #F4BD8A;
+    text-decoration: none;
+    width:200px;
+    line-height: 2;
+    font-size: 1.3rem; 
+    transition: all .5s ease;
+}
+
+li a:hover{
+    color: #E7751F;
+    font-size: 1.4rem;
+    transition: scale(1.1);
+}
+/* Informasjon om meg */
+#om{ 
+    height: 110vh;
+}
+
+.om-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    margin-left: -18%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ombilde, .omtekst{
+    width: 50%;
+    height: 70vh;
+    min-width: 350px; 
+}
+
+.ombilde{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(152,55,73);
+    background: linear-gradient(135deg, rgba(152,55,73,1) 1%, rgba(181,80,66,1) 9%, rgba(196,91,69,1) 25%, rgba(222,118,67,1) 80%, rgba(248,204,153,1) 99%);
+    width: 40%;
+}
+
+.ombilde img{
+    height: 70%;
+}
+
+.omtekst{  
+    padding-left: 30px; 
+}
+
+.omtekst p{
+    min-width: 50%;
+    max-width: 90%;
+}
+
+/* Prosjekter og p element i overlay*/
+#prosjekt p{
+    max-width: 80%;
+    margin: 0;
+    padding-bottom: 30px;
+}
+/* prosjektbilder og tekst forside ikke overlay*/
+.text h3{
+    margin-bottom: 10px;
+}
+
+.text img{
+    height: 400px;
+}
+
+/* overlay prosjekter */
+.container img{
+    width: 70vw;
+    max-height: 50vh;
+    object-fit:cover; 
+}
+
+.overlay {
+    background: rgb(54,53,53);
+    background: linear-gradient(90deg, rgba(54,53,53,1) 30%, rgba(34,34,34,1) 70%);
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+  
+.overlay-content {
+    position: fixed;
+    max-width: 100%;
+    height: 80%;
+    margin: 6% 10% 4% 20%;
+    overflow: scroll;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #ebe2dc;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay p{
+    width: 70vw;
+}
+
+.overlay h2{
+    background:rgba(248,204,153);
+    background: linear-gradient(145deg, rgba(152,55,73,1) 1%, rgba(181,80,66,1) 9%, rgba(196,91,69,1) 16%, rgba(222,118,67,1) 50%, rgba(248,204,153,1) 70%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2.2rem;
+}
+
+.overlay img{
+    width: 60vw;
+    height: 40vh;
+    object-fit: cover; 
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    /* right: 45px; */
+    font-size: 60px;
+    padding: 10px;
+    margin-left:50px;
+}
+
+/* Oversikt over cv, erfaringer og kontaktinfo */
+#cv{
+    margin-top: 30%;
+}
+
+#cv h2{
+    margin-left: 13%;
+}
+
+.cv-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+}
+
+.skole, .erfaring{
+    display: flex;
+    width: 50%;
+    min-width: 350px; 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skole{
+    padding: 30px;
+    background-color: #363535;
+    width: 60%;
+}
+
+.skole p{
+    width: 400px;
+}
+
+.erfaring{
+    background: rgb(152,55,73);
+    background: linear-gradient(135deg, rgba(152,55,73,1) 1%, rgba(181,80,66,1) 9%, rgba(196,91,69,1) 25%, rgba(222,118,67,1) 80%, rgba(248,204,153,1) 99%);
+    width: 40%;
+    
+}
+.erfaring a{
+    text-decoration: none;
+    color: #FFE6D1;
+   
+}
+#kontakt{
+    height: 50px;
+    padding-left: 28px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+@media (max-width: 1130px){
+    p{
+        font-size: 1.2rem;
+    }
+
+    h3{
+        font-size: 1.6rem;
+    }
+    .startside{
+        height: 100vh;
+    }
+
+    #overskrift{
+        font-size: 3.7rem;
+    }
+
+    #intro{
+        width: 100%;
+    }
+
+    #rev{
+        border: none;
+        width: 100%;
+        float: none;
+    }
+
+    .om-container{
+        flex-direction: row;
+        min-width: 100vw;
+    }
+
+    .ombilde, .omtekst{
+        width: 100%;
+        max-height: 400px;
+    }
+
+    .selfie{
+       max-height: 400px;
+       max-width: 310px;
+    }
+
+    .omtekst{
+        max-height: 500px;
+        padding-left: 150px;
+        overflow-y: scroll;
+    }
+
+    .container p {
+        max-width:100%;
+    }
+
+    .cv-container{
+        flex-direction: row;
+        min-width: 100vw;
+    }
+
+    .skole, .erfaring{
+        width: 100%;
+        max-height: 400px;
+    }
+
+    .skole p{
+        
+        width: 370px;
+    }
+
+    .erfaring{
+        height: 300px;
+    }
+    
+}
+
+@media(max-width: 900px){
+    .menu{
+        visibility: hidden;
+    }
+
+    .omtekst{
+        width: 100%;
+        min-height: 500px;
+        overflow-y: scroll;
+    }
+
+    .skole p{
+        
+        width: 300px;
+    }
+    .overlay .closebtn {
+        top: 5px;
+        padding: 10px;
+        margin-left: 4px;
+    }     
+
+    h1{
+        font-size: 2rem;
+        padding-bottom: 15px;
+    }
+} 
+
+@media(max-width:688px) {
+    .ombilde{
+        min-width: 500px;
+    }
+
+    .omtekst{
+        overflow-y: scroll;
+        padding: 0px 10px 20px 40px;
+    }
+
+    .skole{
+        min-height: 500px;
+    }
+   
+    .overlay-content{
+        margin-top:70px;
+    }
+    .tull{
+        margin-top: 100px;
+        
+    }
+}
+
+@media (max-width: 500px){
+    .ombilde{
+        min-width: 50%;
+        margin-top: 20px;
+    }
+}
+
